@@ -1,0 +1,6 @@
+{
+  "name": "Armenian Spanish A1 Vocab Games",
+  "description": "Интерактивное приложение для изучения испанских слов на базе армянского языка (уровень А1) с четырьмя увлекательными играми.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

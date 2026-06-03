@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+body {
+  background: radial-gradient(circle at 10% 20%, #FFF5F7 0%, #FFF0F2 40%, #FFE5EC 100%);
+  color: #2D2D2D;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for beautiful lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 240, 242, 0.5);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFB3C6;
+  border: 1px solid #FFF0F2;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8FAB;
+}
+
+/* Floating animation for subtle elegant touch */
+@keyframes tilt-gently {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(0.5deg); }
+}
+
+@keyframes pulse-gently {
+  0%, 100% { opacity: 0.95; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-tilt-gently {
+  animation: tilt-gently 6s ease-in-out infinite;
+}
+
+.animate-pulse-gently {
+  animation: pulse-gently 3s ease-in-out infinite;
+}
